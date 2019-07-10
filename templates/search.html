@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+
+    {% for item in results %}
+        <p><b>ProductId: </b>{{ item.0.productId }}</p>
+        <p><b>userId: </b>{{ item.0.userId }}</p>
+        <p><b>ProfileName: </b>{{ item.0.profileName }}</p>
+        <p><b>Helpfulness: </b>{{ item.0.helpfulness }}</p>
+        <p><b>Score: </b>{{ item.0.score }}</p>
+        <p><b>Time: </b>{{ item.0.time }}</p>
+        <p><b>Summary: </b>{{ item.0.summary }}</p>
+        <p><b>Text: </b>{{ item.0.text }}</p>
+        <hr>
+
+    {% endfor %}
+
+</body>
+</html>

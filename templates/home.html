@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+<form action="/search/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <label for="team_name"><b>Search query space separated:</b> </label>
+    <input id="team_name" type="text" name="query" value='good food'>
+    <br>
+    <label for="team_name"><b>Limit or Top results</b> </label>
+    <input id="team_name" type="text" name="limit" value='20'>
+    <br>
+    <input type="submit" value="Search">
+</form>
+
+</body>
+</html>
