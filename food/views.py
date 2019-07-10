@@ -2,7 +2,7 @@ from django.conf import settings
 from django.shortcuts import render
 
 # Create your views here.
-MAX_LIMIT = 1000
+MAX_LIMIT = 10000
 doc_list = []
 
 
